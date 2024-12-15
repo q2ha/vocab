@@ -5,7 +5,7 @@ function speakWord(word) {
     function speakNext() {
       if (index < words.length) {
         const utterance = new SpeechSynthesisUtterance(words[index]);
-        utterance.lang = 'en-GB'; // تغيير اللغة إلى الإنجليزية البريطانية
+        utterance.lang = 'en-US'; // تغيير اللغة إلى الإنجليزية البريطانية
         speechSynthesis.speak(utterance);
         
         index++;
