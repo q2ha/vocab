@@ -50,4 +50,11 @@ function speakUserWord() {
   utterance.lang = 'en-US';  // تحديد اللغة الإنجليزية
   utterance.rate = 0.5;  // تحديد سرعة النطق
   speechSynthesis.speak(utterance);
+  
+  function speakWord(word) {
+  const utterance = new SpeechSynthesisUtterance(word);
+  utterance.lang = 'en-US'; // تعيين اللغة إلى الإنجليزية
+  window.speechSynthesis.speak(utterance);
+}
+  
 }
