@@ -6,6 +6,13 @@
   <title>Vocabulary List - Unit 5 to 8</title>
   <link rel="stylesheet" href="styles.css">
   <body>
+     <!-- إضافة حقل إدخال لنطق الكلمات التي يكتبها المستخدم -->
+     <h3>Enter a word to be spoken in English :</h3>
+     <div class="user-input-container">
+   <input type="text" id="userInput" placeholder="Enter a word to be spoken in English" />
+   <button onclick="speakUserWord()">نطق الكلمة</button>
+    </div>
+    
     <div class="vocab-container">
       <h1>Unit Vocabulary</h1>
       
@@ -806,14 +813,6 @@
         <td>You bet!</td>
         <td><button onclick="speakWord('You bet!')">نطق</button></td>
       </tr>
-
-      
-      <!-- إضافة حقل إدخال لنطق الكلمات التي يكتبها المستخدم -->
-     <h3>Enter a word to be spoken in English :</h3>
-     <div class="user-input-container">
-   <input type="text" id="userInput" placeholder="Enter a word to be spoken in English" />
-   <button onclick="speakUserWord()">نطق الكلمة</button>
-    </div>
     </table>
   </div>
 
