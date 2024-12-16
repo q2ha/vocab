@@ -46,3 +46,14 @@ button {
 button:hover {
   background-color: #2980B9;
 }
+
+.user-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.user-input-container input {
+  margin-bottom: 10px;
+}
