@@ -57,3 +57,11 @@ button:hover {
 .user-input-container input {
   margin-bottom: 10px;
 }
+
+.teacher-name {
+  text-align: center;
+  font-size: 18px;
+  color: #2C3E50; /* لون داكن للمعلم */
+  margin-top: -10px; /* لتقريب الاسم من العنوان */
+  font-weight: bold;
+}
