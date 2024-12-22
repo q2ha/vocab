@@ -21,8 +21,8 @@ window.onload = function() {
   const lastVisitTime = localStorage.getItem('lastVisitTime');
   const currentTime = new Date().getTime(); // الحصول على الوقت الحالي بالميلي ثانية
 
-  // التحقق إذا كانت الفارق بين الوقتين أكثر من ساعة (3600000 ميلي ثانية)
-  if (!lastVisitTime || (currentTime - lastVisitTime >= 3600000)) {
+  // التحقق إذا كانت الفارق بين الوقتين أكثر من ساعة (600000 ميلي ثانية)
+  if (!lastVisitTime || (currentTime - lastVisitTime >= 600000)) {
       // إذا مر أكثر من ساعة أو كانت أول زيارة، إظهار النافذة المنبثقة
       document.getElementById('welcome-popup').style.display = 'flex';
       
