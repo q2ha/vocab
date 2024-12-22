@@ -1,3 +1,4 @@
+/* تنسيق الصفحة العامة */
 body {
   font-family: Arial, sans-serif;
   background-color: #F5F5DC; /* Beige background */
@@ -62,6 +63,68 @@ button:hover {
   text-align: center;
   font-size: 18px;
   color: #2C3E50; /* لون داكن للمعلم */
-  margin-top: -10px; /* لتقريب الاسم من العنوان */
   font-weight: bold;
+}
+
+/* تنسيق نافذة الترحيب المنبثقة */
+.popup {
+  display: none; /* مخفي بشكل افتراضي */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* خلفية شبه شفافة */
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px; /* الحد الأقصى للعرض */
+  width: 80%;
+}
+
+.popup-content h2 {
+  color: #3498DB; /* اللون الأزرق للمحتوى */
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.popup-content p {
+  color: #2C3E50; /* اللون الداكن للنص */
+  font-size: 18px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #2C3E50;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #E74C3C; /* لون أحمر عند التمرير */
+}
+
+/* تنسيق زر موافق */
+#ok-button {
+  background-color: #2ECC71; /* لون أخضر للزر */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#ok-button:hover {
+  background-color: #27AE60; /* لون أغمق عند التمرير */
 }
